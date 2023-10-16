@@ -85,6 +85,38 @@ unsigned int testColonne(vector<vector<char>> & tab)
     }
 }
 
+}
+vector<vector<int>> jouer(vector<vector<int>> tab)
+{
+    int i=5;
+    int j;
+    bool j1=true,j2=false,n;
+    while(gagne(tab) == True)
+    {
+        cout << "entrez la colonne souhaité" << endl;
+        cin >> j;
+
+        if (test(tab,j) == 6) {
+            cout<< " la colone est remplis";
+        }
+        if (test(tab,j) <6 ) {
+            if(j1 == true)
+            {
+                tab[i][j] = 1;
+            }
+            else
+            {
+                tab[i][j] = 2;
+            }
+            j1=n;
+            j1 = j2;
+            j2=n;
+        }
+
+    }
+
+}
+
 unsigned int testDiago(vector<vector<char>> & tab)
 {
     if (((tab[0][0] == tab[1][1]) && (tab[0][0] == tab[2][2])) || ((tab[0][2] == tab[1][1]) &&  (tab[0][2]== tab[2][0])))
