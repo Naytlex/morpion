@@ -87,7 +87,7 @@ unsigned int testColonne(vector<vector<char>> & tab)
 
 unsigned int testDiago(vector<vector<char>> & tab)
 {
-    if ((tab[0][0] == tab[1][1] == tab[2][2]) || (tab[0][2] == tab[1][1] == tab[2][0]))
+    if (((tab[0][0] == tab[1][1]) && (tab[0][0] == tab[2][2])) || ((tab[0][2] == tab[1][1]) &&  (tab[0][2]== tab[2][0])))
     {
         if(tab[0][0] == 'o'|| tab[0][2] == 'o')
         {
