@@ -127,68 +127,8 @@ vector<vector<char>> remplir(vector<vector<char>> tab,char valeur,unsigned int p
     }
     return tab;
 }
-bool isgagner(vector<vector<char>> tab,const  char & joueur1){
-    bool gagner=false;
-    /* les lignes*/
-    if(tab[0][0] == joueur1 && tab[0][1] == joueur1 && tab[0][2] == joueur1  ){
-        gagner=true;
-    }
-    else if(tab[1][0] == joueur1 && tab[1][1] == joueur1 && tab[1][2] == joueur1){
-        gagner=true;
-    }
-    else if(tab[2][0] == joueur1 && tab[2][1] == joueur1 && tab[2][2] == joueur1){
-        gagner=true;
-    }
-    /* les colonnes */
-    else if(tab[0][1] == joueur1 && tab[1][1] == joueur1 && tab[2][1] == joueur1){
-        gagner=true;
-    }
-    else if(tab[0][2] == joueur1 && tab[1][2] == joueur1 && tab[2][2] == joueur1){
-     gagner=true;
-    }
-    else if(tab[0][0] == joueur1 && tab[1][0] == joueur1 && tab[2][0] == joueur1 ){
-        gagner=true;
-    }
-    /* la diagonale */
-    else if(tab[0][0] == joueur1 && tab[1][1] == joueur1 && tab[2][2] == joueur1 ){
-        gagner=true;
-    }
-    else{
-        gagner=false;
-    }
-    return gagner;
-}
-bool isgagner2(vector<vector<char>> tab,const    char & joueur2){
-    bool gagner=false;
-    /* lignes */
-    if(tab[0][0] == joueur2 && tab[0][1] == joueur2 && tab[0][2] == joueur2  ){
-        gagner=true;
-    }
-    else if(tab[1][0] == joueur2 && tab[1][1] == joueur2 && tab[1][2] == joueur2){
-        gagner=true;
-    }
-    else if(tab[2][0] == joueur2 && tab[2][1] == joueur2 && tab[2][2] == joueur2){
-        gagner=true;
-    }
-    /* colonne */
-    else if(tab[0][1] == joueur2 && tab[1][1] == joueur2 && tab[2][1] == joueur2){
-        gagner=true;
-    }
-    else if(tab[0][2] == joueur2 && tab[1][2] == joueur2 && tab[2][2] == joueur2){
-        gagner=true;
-    }
-    else if(tab[0][0] == joueur2 && tab[1][0] == joueur2 && tab[2][0] == joueur2 ){
-        gagner=true;
-    }
-    /* diagonale */
-    else if(tab[0][0] == joueur2 && tab[1][1] == joueur2 && tab[2][2] == joueur2 ){
-        gagner=true;
-    }
-    else{
-        gagner=false;
-    }
-    return gagner;
-}
+
+
 bool isrempli(vector<vector<char>> tab){
     bool estrempli;
     for(size_t i=0 ; i < 3 ;i=i+1 ){
