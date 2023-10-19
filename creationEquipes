@@ -1,0 +1,33 @@
+// CREATION DES EQUIPES
+
+struct Equipe {
+       string j1;
+       string j2;
+       string j3;
+       string j4;
+       string j5;
+       int nbPoints;
+     };
+    Equipe nbEquipes[18];
+    for(size_t i=0 ; i<18 ; i=i+1){
+        string nomJ;
+        cout << "Quel est le nom du joueur 1 de l'équipe " << i+1 << " ?" << endl;
+        cin >> nomJ;
+        cout << "Bienvenue " << nomJ << " !"<< endl;
+        nbEquipes[i].j1=nomJ;
+        cout << "Quel est le nom du joueur 2 de l'équipe " << i+1 << " ?" << endl;
+        cin >> nomJ;
+        cout << "Bienvenue " << nomJ << " !"<< endl;
+        nbEquipes[i].j2=nomJ;
+        cout << "Quel est le nom du joueur 3 de l'équipe " << i+1 << " ?" << endl;
+        cin >> nomJ;
+        cout << "Bienvenue " << nomJ << " !"<< endl;
+        nbEquipes[i].j3=nomJ;
+        cout << "Quel est le nom du joueur 4 de l'équipe " << i+1 << " ?" << endl;
+        cin >> nomJ;
+        cout << "Bienvenue " << nomJ << " !"<< endl;
+        nbEquipes[i].j4=nomJ;
+        cout << "Quel est le nom du joueur 5 de l'équipe " << i+1 << " ?" << endl;
+        cin >> nomJ;
+        cout << "Bienvenue " << nomJ << " !"<< endl;
+        nbEquipes[i].j5=nomJ;
